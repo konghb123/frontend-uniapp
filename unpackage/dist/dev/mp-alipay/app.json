@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/index",
+    "pages/login/login"
+  ],
+  "subPackages": [],
+  "window": {
+    "defaultTitle": "uni-app",
+    "titleBarColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "items": [
+      {
+        "pagePath": "pages/me/index",
+        "name": "我的",
+        "icon": "static/icon/c3.png",
+        "activeIcon": "static/icon/c2.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

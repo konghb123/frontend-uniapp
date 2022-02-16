@@ -1,0 +1,44 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "项目管理",
+			"navigationBarBackgroundColor": "#007abc"
+		}
+	}, {
+		"path": "pages/me/index",
+		"style": {
+			"navigationBarTitleText": "我的",
+			"navigationBarBackgroundColor": "#007abc"
+		}
+
+	},
+	{
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarTitleText": "登录",
+			"navigationBarBackgroundColor": "#007abc"
+		}
+	
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"tabBar": {
+		"fontSize": "20px",
+		"list": [
+			{
+				"pagePath": "pages/me/index",
+				"text": "我的",
+				"iconPath": "static/icon/c3.png",
+				"selectedIconPath": "static/icon/c2.png"
+			}
+		]
+	}
+}
