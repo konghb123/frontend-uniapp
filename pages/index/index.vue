@@ -1,6 +1,6 @@
 <template>
 	<view class="container">
-		<view >跳转页面</view>
+		<view >首页</view>
 	</view>
 </template>
 
@@ -12,11 +12,6 @@
 		methods: {
 
 		},
-		onShow(){
-			// uni.redirectTo({
-			// 	url:'../login/login'
-			// })
-		}
 	}
 </script>
 

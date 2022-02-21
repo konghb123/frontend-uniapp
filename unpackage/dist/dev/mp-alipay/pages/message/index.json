@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "消息",
+  "titleBarColor": "#209dff",
+  "usingComponents": {
+    "uni-list-chat": "../../uni_modules/uni-list/components/uni-list-chat/uni-list-chat",
+    "uni-icons": "../../uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "uni-list": "../../uni_modules/uni-list/components/uni-list/uni-list"
+  }
+}

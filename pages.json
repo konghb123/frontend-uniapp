@@ -1,26 +1,35 @@
 {
 	"pages": [{
-		"path": "pages/index/index",
-		"style": {
-			"navigationBarTitleText": "项目管理",
-			"navigationBarBackgroundColor": "#007abc"
-		}
-	}, {
-		"path": "pages/me/index",
-		"style": {
-			"navigationBarTitleText": "我的",
-			"navigationBarBackgroundColor": "#007abc"
-		}
+			"path": "pages/message/index",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"navigationBarBackgroundColor": "#209dff"
+			}
 
-	},
-	{
-		"path": "pages/login/login",
-		"style": {
-			"navigationBarTitleText": "登录",
-			"navigationBarBackgroundColor": "#007abc"
+		},{
+			"path": "pages/me/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#209dff"
+			}
+
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#209dff"
+			}
+
+		}, {
+			"path": "pages/login/logo",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
-	
-	}],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
@@ -34,11 +43,15 @@
 		"fontSize": "20px",
 		"list": [
 			{
-				"pagePath": "pages/me/index",
-				"text": "我的",
-				"iconPath": "static/icon/c3.png",
-				"selectedIconPath": "static/icon/c2.png"
-			}
-		]
+				"pagePath": "pages/message/index",
+				"text": "消息",
+				"iconPath": "static/icons/c1.png",
+				"selectedIconPath": "static/icons/c1.png"
+			},{
+			"pagePath": "pages/me/index",
+			"text": "我的",
+			"iconPath": "static/icons/c1.png",
+			"selectedIconPath": "static/icons/c1.png"
+		}]
 	}
 }
