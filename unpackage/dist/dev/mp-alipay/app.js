@@ -3,16 +3,28 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports[Symbol.toStringTag] = "Module";
 var common_vendor = require("./common/vendor.js");
 if (!Math) {
+  "./pages/todo/index.js";
   "./pages/message/index.js";
-  "./pages/me/index.js";
   "./pages/login/login.js";
   "./pages/login/logo.js";
+  "./pages/project/index.js";
+  "./pages/detail/index.js";
 }
 const _sfc_main = {
   setup(__props) {
     common_vendor.onLaunch(() => {
-      console.warn("\u5F53\u524D\u7EC4\u4EF6\u4EC5\u652F\u6301 uni_modules \u76EE\u5F55\u7ED3\u6784 \uFF0C\u8BF7\u5347\u7EA7 HBuilderX \u5230 3.1.0 \u7248\u672C\u4EE5\u4E0A\uFF01");
       console.log("App Launch");
+      common_vendor.index.login({
+        provider: common_vendor.index.getProvider({
+          service: "oauth"
+        }),
+        scopes: "auth_user",
+        success: (loginRes) => {
+          console.log("login \u6210\u529F \u83B7\u53D6code", loginRes.code);
+        },
+        fail: () => {
+        }
+      });
     });
     common_vendor.onShow(() => {
       console.log("App Show");

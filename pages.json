@@ -1,15 +1,15 @@
 {
 	"pages": [{
+			"path": "pages/todo/index",
+			"style": {
+				"navigationBarTitleText": "待办",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#209dff"
+			}
+		}, {
 			"path": "pages/message/index",
 			"style": {
 				"navigationBarTitleText": "消息",
-				"navigationBarBackgroundColor": "#209dff"
-			}
-
-		},{
-			"path": "pages/me/index",
-			"style": {
-				"navigationBarTitleText": "我的",
 				"navigationBarBackgroundColor": "#209dff"
 			}
 
@@ -29,7 +29,27 @@
 			}
 
 		}
-	],
+	    ,{
+            "path" : "pages/project/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "项目",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#209dff"
+            }
+            
+        },
+		{
+		    "path" : "pages/detail/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "对象",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#209dff"
+		    }
+		    
+		}
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
@@ -41,15 +61,19 @@
 	},
 	"tabBar": {
 		"fontSize": "20px",
-		"list": [
-			{
-				"pagePath": "pages/message/index",
-				"text": "消息",
-				"iconPath": "static/icons/c1.png",
-				"selectedIconPath": "static/icons/c1.png"
-			},{
-			"pagePath": "pages/me/index",
-			"text": "我的",
+		"list": [{
+			"pagePath": "pages/todo/index",
+			"text": "待办",
+			"iconPath": "static/icons/c1.png",
+			"selectedIconPath": "static/icons/c1.png"
+		},{
+			"pagePath": "pages/project/index",
+			"text": "项目",
+			"iconPath": "static/icons/c1.png",
+			"selectedIconPath": "static/icons/c1.png"
+		}, {
+			"pagePath": "pages/message/index",
+			"text": "消息",
 			"iconPath": "static/icons/c1.png",
 			"selectedIconPath": "static/icons/c1.png"
 		}]

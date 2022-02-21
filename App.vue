@@ -3,16 +3,21 @@
 	import {
 		onShow,
 		onHide,
-		onLaunch
+		onLaunch,
 	} from '@dcloudio/uni-app'
 
 	onLaunch(() => {
-		console.warn('当前组件仅支持 uni_modules 目录结构 ，请升级 HBuilderX 到 3.1.0 版本以上！')
 		console.log('App Launch')
-		// 判断是否登录
-		// uni.redirectTo({
-		// 	url:'../login/login'
-		// })
+		uni.login({
+			provider: uni.getProvider({
+				service: 'oauth'
+			}),
+			scopes: 'auth_user', //支付宝小程序需设置授权类型
+			success: (loginRes) => {
+				console.log('login 成功 获取code', loginRes.code);
+			},
+			fail: () => {}
+		});
 	})
 
 
@@ -24,8 +29,6 @@
 	onHide(() => {
 		console.log('App Hide')
 	})
-	
-
 </script>
 
 <style lang="scss">

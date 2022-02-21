@@ -2,11 +2,11 @@
 	<view class="dp-fc p-0-20 search">
 		<input type="text" v-model="searchValue" class="w100" placeholder="搜索" placeholder-class="fs-22" />
 	</view>
-	<view class="bg-fff f-1 tab">
-		<view class="dp-f p-all-20 jc-sa">
+	<view class="bg-fff f-1 ">
+		<view class="dp-f p-all-20 jc-sa tab">
 			<button type="default" class="fs-24" v-for="tab in tabs" :key="tab.key">{{tab.name}}</button>
 		</view>
-		<scroll-view scroll-y="true" class="chatList" refresher-enabled="true" @refresherrefresh="onRefresh">
+		<scroll-view scroll-y="true" class="chatList" @scrolltolower="lower">
 			<uni-list :border="true">
 				<!-- 显示圆形头像 -->
 				<uni-list-chat :avatar-circle="true" title="超长的名字啊快点放假啊大放假啊的 啊附件啊手动阀就阿德撒法阿达放假啊的发啊士大夫立刻 阿道夫就爱上对方  "
@@ -111,6 +111,7 @@
 
 	// search
 	const searchValue: string = ref('')
+	
 
 	// tab
 	const tabs: {
@@ -129,8 +130,8 @@
 
 	// chat list
 
-	const onRefresh = () => {
-		console.log('下拉刷新......')
+	const lower = () => {
+		console.log('刷新列表......')
 	}
 </script>
 

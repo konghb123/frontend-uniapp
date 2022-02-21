@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/todo/index",
     "pages/message/index",
-    "pages/me/index",
     "pages/login/login",
-    "pages/login/logo"
+    "pages/login/logo",
+    "pages/project/index",
+    "pages/detail/index"
   ],
   "window": {
     "defaultTitle": "uni-app",
@@ -13,14 +15,20 @@
   "tabBar": {
     "items": [
       {
-        "pagePath": "pages/message/index",
-        "name": "消息",
+        "pagePath": "pages/todo/index",
+        "name": "待办",
         "icon": "static/icons/c1.png",
         "activeIcon": "static/icons/c1.png"
       },
       {
-        "pagePath": "pages/me/index",
-        "name": "我的",
+        "pagePath": "pages/project/index",
+        "name": "项目",
+        "icon": "static/icons/c1.png",
+        "activeIcon": "static/icons/c1.png"
+      },
+      {
+        "pagePath": "pages/message/index",
+        "name": "消息",
         "icon": "static/icons/c1.png",
         "activeIcon": "static/icons/c1.png"
       }

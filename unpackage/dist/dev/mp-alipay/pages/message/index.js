@@ -25,8 +25,8 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
       name: "@\u6211\u7684",
       key: "toMe"
     }];
-    const onRefresh = () => {
-      console.log("\u4E0B\u62C9\u5237\u65B0......");
+    const lower = () => {
+      console.log("\u5237\u65B0\u5217\u8868......");
     };
     return (_ctx, _cache) => {
       return {
@@ -194,7 +194,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
         z: common_vendor.p({
           border: true
         }),
-        A: common_vendor.o(onRefresh)
+        A: common_vendor.o(lower)
       };
     };
   }
