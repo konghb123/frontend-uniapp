@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/todo/index",
+    "pages/todo/todoDetail",
     "pages/message/index",
     "pages/login/login",
     "pages/login/logo",

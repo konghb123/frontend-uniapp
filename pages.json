@@ -1,81 +1,87 @@
 {
-	"pages": [{
-			"path": "pages/todo/index",
-			"style": {
-				"navigationBarTitleText": "待办",
-				"enablePullDownRefresh": false,
-				"navigationBarBackgroundColor": "#209dff"
-			}
-		}, {
-			"path": "pages/message/index",
-			"style": {
-				"navigationBarTitleText": "消息",
-				"navigationBarBackgroundColor": "#209dff"
-			}
-
-		},
-		{
-			"path": "pages/login/login",
-			"style": {
-				"navigationBarTitleText": "登录",
-				"navigationBarBackgroundColor": "#209dff"
-			}
-
-		}, {
-			"path": "pages/login/logo",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}
-	    ,{
-            "path" : "pages/project/index",
-            "style" :                                                                                    
-            {
+    "pages": [{
+            "path": "pages/todo/index",
+            "style": {
+                "navigationBarTitleText": "待办",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#209dff"
+            }
+        },
+        {
+            "path": "pages/todo/todoDetail",
+            "style": {
+                "navigationBarTitleText": "待办",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#209dff"
+            }
+        },
+        {
+            "path": "pages/message/index",
+            "style": {
+                "navigationBarTitleText": "消息",
+                "navigationBarBackgroundColor": "#209dff"
+            }
+        },
+        {
+            "path": "pages/login/login",
+            "style": {
+                "navigationBarTitleText": "登录",
+                "navigationBarBackgroundColor": "#209dff"
+            }
+        },
+        {
+            "path": "pages/login/logo",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/project/index",
+            "style": {
                 "navigationBarTitleText": "项目",
                 "enablePullDownRefresh": false,
-				"navigationBarBackgroundColor": "#209dff"
+                "navigationBarBackgroundColor": "#209dff"
             }
-            
         },
-		{
-		    "path" : "pages/detail/index",
-		    "style" :                                                                                    
-		    {
-		        "navigationBarTitleText": "对象",
-		        "enablePullDownRefresh": false,
-				"navigationBarBackgroundColor": "#209dff"
-		    }
-		    
-		}
+        {
+            "path": "pages/detail/index",
+            "style": {
+                "navigationBarTitleText": "对象",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#209dff"
+            }
+        }
     ],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
-		"app-plus": {
-			"background": "#efeff4"
-		}
-	},
-	"tabBar": {
-		"fontSize": "20px",
-		"list": [{
-			"pagePath": "pages/todo/index",
-			"text": "待办",
-			"iconPath": "static/icons/c1.png",
-			"selectedIconPath": "static/icons/c1.png"
-		},{
-			"pagePath": "pages/project/index",
-			"text": "项目",
-			"iconPath": "static/icons/c1.png",
-			"selectedIconPath": "static/icons/c1.png"
-		}, {
-			"pagePath": "pages/message/index",
-			"text": "消息",
-			"iconPath": "static/icons/c1.png",
-			"selectedIconPath": "static/icons/c1.png"
-		}]
-	}
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uni-app",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8",
+        "app-plus": {
+            "background": "#efeff4"
+        }
+    },
+    "tabBar": {
+        "fontSize": "20px",
+        "list": [{
+                "pagePath": "pages/todo/index",
+                "text": "待办",
+                "iconPath": "static/icons/c1.png",
+                "selectedIconPath": "static/icons/c1.png"
+            },
+            {
+                "pagePath": "pages/project/index",
+                "text": "项目",
+                "iconPath": "static/icons/c1.png",
+                "selectedIconPath": "static/icons/c1.png"
+            },
+            {
+                "pagePath": "pages/message/index",
+                "text": "消息",
+                "iconPath": "static/icons/c1.png",
+                "selectedIconPath": "static/icons/c1.png"
+            }
+        ]
+    }
 }
