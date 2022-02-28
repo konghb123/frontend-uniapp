@@ -10,6 +10,7 @@ if (!Math) {
   "./pages/login/logo.js";
   "./pages/project/index.js";
   "./pages/detail/index.js";
+  "./pages/login/unbounded.js";
 }
 const _sfc_main = {
   setup(__props) {

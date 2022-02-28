@@ -10,7 +10,7 @@
         {
             "path": "pages/todo/todoDetail",
             "style": {
-                "navigationBarTitleText": "待办",
+                "navigationBarTitleText": "审核",
                 "enablePullDownRefresh": false,
                 "navigationBarBackgroundColor": "#209dff"
             }
@@ -48,6 +48,14 @@
             "path": "pages/detail/index",
             "style": {
                 "navigationBarTitleText": "对象",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#209dff"
+            }
+        },
+        {
+            "path": "pages/login/unbounded",
+            "style": {
+                "navigationBarTitleText": "未绑定",
                 "enablePullDownRefresh": false,
                 "navigationBarBackgroundColor": "#209dff"
             }

@@ -12,8 +12,10 @@ const _easycom_uni_search_bar = () => "../../uni_modules/uni-search-bar/componen
 const _easycom_uni_list_item = () => "../../uni_modules/uni-list/components/uni-list-item/uni-list-item.js";
 const _easycom_uni_list = () => "../../uni_modules/uni-list/components/uni-list/uni-list.js";
 if (!Math) {
-  (_easycom_uni_search_bar + _easycom_uni_list_item + _easycom_uni_list)();
+  (dropdownScreen + _easycom_uni_search_bar + _easycom_uni_list_item + _easycom_uni_list + BottomButtons)();
 }
+const dropdownScreen = () => "../../components/dropdown-screen/dropdown-screen.js";
+const BottomButtons = () => "./components/bottom-buttons.js";
 const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
   setup(__props) {
     common_vendor.ref("");
@@ -23,17 +25,27 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     api_todoApi.queryTodoTasks(0, 10).then((res) => {
       console.log(res.data);
     });
+    const toDetail = () => {
+      console.log("toDetail...");
+      common_vendor.index.navigateTo({
+        url: "/pages/todo/todoDetail?id=111"
+      });
+    };
     return (_ctx, _cache) => {
       return {
         a: common_vendor.o(_ctx.search),
         b: common_vendor.o(_ctx.cancel),
         c: common_vendor.p({
           radius: "5",
-          placeholder: "\u4E00\u76F4\u663E\u793A",
+          placeholder: "\u6309\u6D41\u7A0B\u540D\u79F0\u641C\u7D22",
           clearButton: "always",
-          cancelButton: "always"
+          bgColor: "#ffffff"
         }),
-        d: common_vendor.o(lower)
+        d: common_vendor.o(toDetail),
+        e: common_vendor.p({
+          clickable: true
+        }),
+        f: common_vendor.o(lower)
       };
     };
   }

@@ -1,1 +1,1 @@
-<view></view>
+<view onTap="{{a}}">待办详情</view><bottom-popup-select ref="__r" u-r="{{b}}" onSelected="{{c}}" u-i="d0615108-0" onVI="__l" u-p="{{d}}"/>

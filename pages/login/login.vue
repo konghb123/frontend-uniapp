@@ -1,6 +1,6 @@
 <template>
 	<view class="container">
-		<view class="uni-primary">登录界面</view>
+		<view class="uni-primary">绑定钉钉界面</view>
 	</view>
 </template>
 

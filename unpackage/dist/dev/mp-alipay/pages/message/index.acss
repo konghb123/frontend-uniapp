@@ -4,7 +4,9 @@ page.data-v-191297be {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #f7f7f7;
+}
+.text-primary.data-v-191297be {
+  color: #2979ff;
 }
 button.data-v-191297be {
   width: 120rpx;

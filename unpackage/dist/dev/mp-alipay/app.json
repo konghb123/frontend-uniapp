@@ -6,7 +6,8 @@
     "pages/login/login",
     "pages/login/logo",
     "pages/project/index",
-    "pages/detail/index"
+    "pages/detail/index",
+    "pages/login/unbounded"
   ],
   "window": {
     "defaultTitle": "uni-app",
